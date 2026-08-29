@@ -1,30 +1,45 @@
 # Aruba Wireless & VLAN Infrastructure
 
-Hands-on Aruba networking lab focused on wireless controller administration, access switching, VLAN connectivity, DHCP, client addressing, and troubleshooting across a multi-device environment.
+Hands-on CSN405 wireless networking lab focused on Aruba 7005 controller administration, VLAN verification, access switching, DHCP/IP connectivity, and troubleshooting through both CLI and GUI workflows.
 
-## Technologies
+## Verified Lab Environment
 
 - Aruba 7005 wireless controller
 - ArubaOS 8.3.0.9
-- Aruba 2540 / 2530 access switching
-- WLAN and VLAN configuration
-- DHCP and IPv4 addressing
-- Switch-port membership and VLAN tagging
-- Gateway and client-connectivity testing
+- Controller name: `CSN405-group-G`
+- Controller IPv4 address: `172.16.0.1`
+- VLAN 1: `172.16.0.1/24`
+- Aruba 2540 / 2530 switching used across related wireless/networking labs
+- WLAN, VLAN, DHCP, IPv4, gateway and client-connectivity concepts
+
+## Completed Evidence Recovered
+
+A completed screenshot-only course submission was recovered. It contains actual verification captures for:
+
+- `show ip interface brief`
+- `show controller-ip`
+- `show clock`
+- `show vlan`
+- Aruba Mobility Controller web dashboard
+
+The CLI evidence shows VLAN 1 and the controller interface operational at `172.16.0.1/24`. The GUI evidence shows the Aruba 7005 controller, ArubaOS version, controller IP, deployment role, port state and event information.
 
 ## Demonstrated Skills
 
-- Configured and accessed an Aruba wireless controller through CLI/GUI workflows
-- Worked with access switching and VLAN membership
-- Mapped wireless access to VLAN-based network connectivity
-- Verified DHCP addressing and client reachability
-- Troubleshot VLAN tagging, switch-port membership, default-gateway reachability, and wireless client access
+- Accessed and verified an Aruba wireless controller through CLI and web GUI
+- Checked interface status, controller addressing, VLAN membership and operational state
+- Worked with VLAN-based wired/wireless connectivity concepts
+- Practiced DHCP/IP addressing and gateway troubleshooting
+- Used a structured verify-isolate-test workflow for controller and client connectivity
 
 ## Documentation
 
-- `docs/lab-topology.md` — recovered environment and logical traffic flow
+- `docs/completed-evidence.md` — recovered completed-submission evidence
+- `docs/lab-topology.md` — lab environment and logical traffic flow
 - `docs/troubleshooting.md` — wireless/VLAN troubleshooting workflow
+
+> Student-identifying information from the original submission is intentionally not published.
 
 ## Project Type
 
-Academic wireless networking lab — Seneca Polytechnic.
+Completed academic wireless networking lab — Seneca Polytechnic, CSN405.
